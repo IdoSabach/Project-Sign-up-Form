@@ -1,0 +1,173 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: 1px solid ;
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.picture{
+  width: 40%;
+  position: relative;
+}
+
+.img{
+  width: 100%;
+  flex-basis: auto;
+}
+
+.blok-img{
+  
+}
+
+.txt{
+  font-size: 0.7em;
+  color: aliceblue;
+  position: absolute;
+  bottom: 0.1px;
+  width: 100%;
+  text-align: center;
+}
+
+.txt2{
+  color: aliceblue;
+  position: absolute;
+  width: 100%;
+  background: black;
+  opacity: 2;
+  color: white;
+  top: 8rem;
+  text-align: center;
+  font-size: 3em;
+  font-family: roboto;
+}
+
+.right{
+  width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+
+@media only screen and (max-width: 600px)  {
+  .content{
+      flex-flow: column;
+      height: auto;
+      text-align: center;
+  }
+  .picture{
+      width: 100vw;
+      height: 15vh;
+      display: flex;
+      background-size: 100vw;
+  }
+  .logo{
+      width: 100vw;
+      position: static;
+      gap: 10px;
+  }
+  .right{
+      width: auto;
+      height: auto;
+  }
+  .dummy-text{
+      width: auto;
+      margin-top: 30px;
+
+  }
+  .left{
+      padding: 10px 20px;
+  }
+  .remote-text{
+      padding: 20px 0;
+      margin: 0;
+  }
+  .form{
+      flex-flow: column nowrap;
+      align-items: center;
+
+  }
+  .input{
+      text-align: left;
+      width: auto;
+      font-size: 0.9em;
+      justify-content: center;
+      align-items: center;
+  }
+  input{
+      font-size: 0.9rem;
+      height: 1.5rem;
+      width: 70vw;
+  }
+  .button,
+  .log-in{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0px;
+  }
+  button{
+      margin-bottom: 0px;
+      width: 60vw;
+      padding: 10px 5px;
+  }
+
+} */
