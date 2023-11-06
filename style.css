@@ -91,7 +91,7 @@ body{
 
   .head{
     font-size: 40px;
-    margin-top: 15px;
+    /* margin-top: 5px; */
     color: white;
   }
   .form{
@@ -119,9 +119,6 @@ body{
     background-color: #adb5bd;
     font-weight: 600;
   }
-  .cpassword{
-
-  }
 
   .btn{
     background-color: rgb(12, 215, 80);
@@ -136,17 +133,35 @@ body{
     cursor: pointer;
   }
 
-
   @media (max-width: 600px) {
     .form{
       display: grid;
       grid-template-columns: repeat(1,1fr);
-      /* border-style: solid; */
-      row-gap: 30px;
-      column-gap: 50px;
-      margin-top: 30px;
-      justify-content: center;
-      align-items: center;
+      row-gap: 15px;
+      column-gap: 15px;
+    }
+
+    label{
+      color: white;
+      font-size: 16px;
+    }
+    input{
+      width:200px;
+      font-size: 16px;
+    }
+    .curser{
+      width: 1000px;
+      height: 2000px;
+    }
+    .head{
+      font-size: 32px;
+      color: white;
+    }
+
+    .btn{
+      font-size: 20px;
+      height: 40px;
+      margin-top: 10px;
     }
     
   }
