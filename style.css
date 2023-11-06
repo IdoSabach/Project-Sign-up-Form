@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(28, 28, 28);
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.contain{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.row-one{
+  display: inline-flex;
+  margin-top: -32px;
+  overflow: hidden;
+}
+
+.row-even{
+  display: inline-flex;
+  margin-left: -26px;
+  margin-top: -15px;
+  overflow: hidden;
+}
+
+.row-not-even{
+  display: inline-flex;
+  margin-top: -15px;
+  overflow: hidden;
+}
+
+.box{
+  position: relative;
+  width: 50px;
+  height:50px;
+  margin: 1px;
+  background: black;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  z-index: 0;
+}
+
+  .curser{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: anim 2s linear infinite;
+    visibility: hidden;
+    /* transition: .0.2s; */
+    transform: translate(-50%,-50%);
+  }
+  @keyframes anim{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  body:hover .curser{
+    background: radial-gradient(rgb(0, 255, 30),black);
+    visibility: visible;
+  }
