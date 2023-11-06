@@ -135,3 +135,18 @@ body{
     background-color: rgb(12, 176, 67);
     cursor: pointer;
   }
+
+
+  @media (max-width: 600px) {
+    .form{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      /* border-style: solid; */
+      row-gap: 30px;
+      column-gap: 50px;
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  }
