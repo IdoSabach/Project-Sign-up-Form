@@ -4,10 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 body{
-  background-color: rgb(28, 28, 28);
+  background-color: rgb(51, 51, 51);
   overflow: hidden;
   min-height: 100%;
 }
@@ -41,7 +43,7 @@ body{
   position: relative;
   width: 50px;
   height:50px;
-  margin: 1px;
+  margin: 0.5px;
   background: black;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   z-index: 0;
@@ -49,8 +51,8 @@ body{
 
   .curser{
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
     border-radius: 50%;
     animation: anim 2s linear infinite;
     visibility: hidden;
@@ -69,4 +71,66 @@ body{
   body:hover .curser{
     background: radial-gradient(rgb(0, 255, 30),black);
     visibility: visible;
+  }
+
+  .block-sign-in{
+    background-color: #343a40;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.95;
+    padding: 50px;
+  }
+
+  .head{
+    font-size: 40px;
+    margin-top: 15px;
+    color: white;
+  }
+  .form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    /* border-style: solid; */
+    row-gap: 30px;
+    column-gap: 50px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  label{
+    color: white;
+    font-size: 24px;
+  }
+  input{
+    width:250px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-left: 5px;
+    border-style: solid;
+    background-color: #adb5bd;
+    font-weight: 600;
+  }
+  .cpassword{
+
+  }
+
+  .btn{
+    background-color: rgb(12, 215, 80);
+    font-size: 24px;
+    border-radius: 10px;
+    border-style: none;
+    height: 40px;
+  }
+
+  .btn:hover{
+    background-color: rgb(12, 176, 67);
+    cursor: pointer;
   }
