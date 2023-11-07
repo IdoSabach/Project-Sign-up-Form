@@ -9,42 +9,21 @@ document.addEventListener("mouseover", function (e) {
 
 const contain = document.querySelector(".contain");
 
-function rowOneF() {
-  const rowOne = document.createElement("div");
-  rowOne.classList.add("row-one");
-  contain.appendChild(rowOne);
-  for (let i = 0; i < 50; i++) {
+function createRow(nameRow,parent,num){
+  const row = document.createElement("div");
+  row.classList.add(nameRow);
+  parent.appendChild(row);
+  for (let i = 0; i < num; i++) {
     const box = document.createElement("div");
     box.classList.add("box");
-    rowOne.appendChild(box);
+    row.appendChild(box);
   }
 }
 
-function rowEvenF() {
-  const rowEven = document.createElement("div");
-  rowEven.classList.add("row-even");
-  contain.appendChild(rowEven);
-  for (let i = 0; i < 50; i++) {
-    const box = document.createElement("div");
-    box.classList.add("box");
-    rowEven.appendChild(box);
-  }
-}
+createRow("row-one",contain,50)
 
-function rowNotEvenF() {
-  const rowNotEven = document.createElement("div");
-  rowNotEven.classList.add("row-not-even");
-  contain.appendChild(rowNotEven);
-  for (let i = 0; i < 50; i++) {
-    const box = document.createElement("div");
-    box.classList.add("box");
-    rowNotEven.appendChild(box);
-  }
-}
-
-rowOneF();
-for (let i = 0; i < 17; i++) {
-  rowEvenF();
-  rowNotEvenF();
+for(let i =0 ; i<17 ; i++){
+  createRow("row-even",contain,50)
+  createRow("row-not-even",contain,50)
 }
 
